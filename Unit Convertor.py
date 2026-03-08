@@ -50,8 +50,8 @@ if Field=='Volume':
 
       value= st.number_input("Enter the volume",min_value=0,key='value')
 
-      unit=st.selectbox("Select the unit",['m3','liter','gal','ft3','bbl'])
-      desired_unit= st.selectbox("Select the unit",['bbl', 'm3','liter','gal','ft3'])
+      unit=st.selectbox("Select the given unit",['m3','liter','gal','ft3','bbl'])
+      desired_unit= st.selectbox("Select the desired unit",['bbl', 'm3','liter','gal','ft3'])
       a=st.button("Calculate")
       rerun= st.button('Re-run')
       if a:
@@ -791,4 +791,5 @@ if Field== 'Flow Rate':
 
     
     
+
 
