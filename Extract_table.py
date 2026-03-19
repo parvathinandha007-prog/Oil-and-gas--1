@@ -50,7 +50,7 @@ if file is not None:
 
             start_row= start_row + len(df) +2
             output.seek(0)
-            st.download_button(label='Download Excel', data= output,file_name= f'{name}.xlsx', mime= 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+            st.download_button(label='Download Excel', data= output,file_name= f'{name}.xlsx', mime= 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
                  
 
             st.success("Excel created")
