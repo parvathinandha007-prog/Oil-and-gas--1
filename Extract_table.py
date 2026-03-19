@@ -48,8 +48,7 @@ if file is not None:
              for i , df in enumerate (selected_tables):
          
                  df.to_excel(writer,sheet_name="Tables",startrow=start_row, header= False,index= False)
-
-            start_row= start_row + len(df) +2
+                 start_row= start_row + len(df) +2
             output.seek(0)
             st.download_button(label='Download Excel', data= output,file_name= f'{name}.xlsx', mime= 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
                  
