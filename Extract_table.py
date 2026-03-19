@@ -40,9 +40,10 @@ if file is not None:
         
 
         if b :
+            #create emplty file in memory
             output= io.BytesIO()
             
-            with pd.ExcelWriter( f'{name}.xlsx',engine= 'xlsxwriter') as writer:
+            with pd.ExcelWriter( output,engine= 'xlsxwriter') as writer:
              start_row=0
              for i , df in enumerate (selected_tables):
          
